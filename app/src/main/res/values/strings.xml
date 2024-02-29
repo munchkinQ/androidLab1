@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Labb1</string>
+    <string name="welcomeMessage">Welcome to my app!</string>
+    <string name="mainText">In this application you will be given a short introduction to the ten albums of Taylor Swift. Surprise!</string>
+    <string name="aboutHeader">About</string>
+    <string name="aboutText">Taylor Swift has gained commercial success with her 10 studio albums and 4 re-recordings, this application will only be on the ten regular albums.
+    In order of release these are: Debut, Fearless, Speak Now, Red, 1989, Reputation, Lover, folklore, evermore and Midnights.
+    My personal favourites are Reputation and folklore, try to switch between Reputation mode and folklore mode up in the left corner! :)</string>
+    <string name="currentEra">Current Era: Reputation</string>
+    <string name="loginText">Login Credentials: your album of choice.
+        Password: 12345</string>
+    <string name="finalHeader">You are now logged in</string>
+    <string name="finalText">Thank you for using my application :)</string>
+
+    <string name="buttonText">Next Page</string>
+    <string name="loginButtonText">Log in</string>
+    <string name="backToStartButton">Back Home</string>
+
+
+
+</resources>
