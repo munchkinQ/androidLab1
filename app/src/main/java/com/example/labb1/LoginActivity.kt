@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
                 //println(userLoginCredentials)
                 isUser = true
                 val intent = Intent(this, FinalActivity::class.java).apply {
-                    putExtra("toast", userLoginCredentials.toString())
+                    putExtra("toast", userLoginCredentials)
                 }
                 if (isUser) {
                     startActivity(intent)

@@ -25,7 +25,7 @@ class AboutActivity : AppCompatActivity() {
         binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val currentEra = binding.currentEra //den tillämpar värderna o gör om dem till den formatteringen den vill ha istället för ID
+        val currentEra = binding.currentEra
         val switchEras = binding.switchEras
 
         switchEras.setOnClickListener {
@@ -41,6 +41,8 @@ class AboutActivity : AppCompatActivity() {
         val header = findViewById<TextView>(R.id.about_header)
         val text = findViewById<TextView>(R.id.about_text)
 
+
+        //this could obvs be done with the themes, but oh well
         switchEras.setOnClickListener {
             if (switchEras.isChecked) {
                 currentEra.text = folklore

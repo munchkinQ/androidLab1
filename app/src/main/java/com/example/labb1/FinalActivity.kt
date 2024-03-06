@@ -15,7 +15,6 @@ class FinalActivity : AppCompatActivity() {
 
         val showUsername = intent.getStringExtra("toast")
 
-        val text = ""
         val duration = Toast.LENGTH_LONG
         val toast = Toast.makeText(applicationContext, showUsername, duration)
         toast.show()
