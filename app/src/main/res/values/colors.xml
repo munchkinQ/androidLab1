@@ -9,5 +9,9 @@
     <color name="salmon">#F4ACB7</color>
     <color name="brown">#9D8189</color>
     <color name="d.brown">#676062</color>
+    <color name="reputationColor">#222222</color>
+    <color name="reputationText">#FFFFFFFF</color>
+
+
 
 </resources>

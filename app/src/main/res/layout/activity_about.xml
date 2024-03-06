@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/reputationColor">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/about_header"
@@ -11,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:text="@string/aboutHeader"
+        android:textColor="@color/sage"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,6 +25,8 @@
         android:layout_height="155dp"
         android:layout_marginBottom="16dp"
         android:text="@string/aboutText"
+        android:textColor="@color/reputationText"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_to_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -35,21 +41,29 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/salmon"
+        android:buttonTint="@color/pink"
+        android:foregroundTint="@color/mint"
         android:text="Switch"
+        android:textColor="@color/reputationText"
+        android:textColorHint="@color/mint"
         app:layout_constraintEnd_toStartOf="@+id/about_header"
         app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackTint="@color/pink" />
 
     <Button
         android:id="@+id/btn_to_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="@color/sage"
         android:text="@string/buttonText"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -61,6 +75,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/currentEra"
+        android:textColor="@color/reputationText"
         app:layout_constraintBottom_toTopOf="@+id/about_header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.435"

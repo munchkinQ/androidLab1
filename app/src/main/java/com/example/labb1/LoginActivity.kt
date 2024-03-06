@@ -30,9 +30,11 @@ class LoginActivity : AppCompatActivity() {
             val userLoginCredentials: String = loginCredentials.text.toString()
             val inputPassword: String = passwordInput.text.toString()
             if (userLoginCredentials in albumLoginCredentials && inputPassword == userPassword) {
-                println(userLoginCredentials)
+                //println(userLoginCredentials)
                 isUser = true
-                val intent = Intent(this, FinalActivity::class.java)
+                val intent = Intent(this, FinalActivity::class.java).apply {
+                    putExtra("toast", userLoginCredentials.toString())
+                }
                 if (isUser) {
                     startActivity(intent)
                 }

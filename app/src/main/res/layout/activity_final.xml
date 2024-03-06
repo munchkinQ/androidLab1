@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/reputationColor">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/final_header"
@@ -11,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="164dp"
         android:text="@string/finalText"
+        android:textColor="@color/reputationText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,19 +22,23 @@
         android:id="@+id/btn_to_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="@color/sage"
         android:text="@string/backToStartButton"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/final_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/finalHeader"
+        android:textColor="@color/reputationText"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/final_header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
